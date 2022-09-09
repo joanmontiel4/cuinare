@@ -1,0 +1,44 @@
+@use '../../../infrastructure/styles/shared';
+
+.category-btn {
+    width: 7rem;
+    height: 5rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: shared.$background-button-color;
+    background-color: shared.$page-background-color;
+    border: 1px solid grey;
+    border-radius: 0.8rem;
+
+    &__img {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin: 0.3rem;
+    }
+
+    &__button {
+        font-weight: 600;
+        border: none;
+        background-color: transparent;
+        margin: 0.3rem;
+        color: shared.$background-button-color;
+    }
+
+    &__button:hover {
+        background-color: transparent;
+    }
+}
+
+.category-btn:hover {
+    border: 2.5px solid shared.$background-button-color;
+    background-color: #f1ede9;
+}
+
+.category-btn--selected {
+    border: 2.5px solid shared.$background-button-color;
+    background-color: white;
+}

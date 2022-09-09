@@ -1,0 +1,11 @@
+@use '../../styles/shared';
+
+.favorite-btn-container {
+    font-size: shared.$font-awesome-size;
+    margin: 0 0.8rem;
+    cursor: pointer;
+}
+
+.favorite-btn-container:hover {
+    opacity: 0.7;
+}

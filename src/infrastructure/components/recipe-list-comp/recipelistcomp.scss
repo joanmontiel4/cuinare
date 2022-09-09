@@ -1,0 +1,37 @@
+@use '../../styles/shared';
+
+.recipes-container {
+    min-width: 600px;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recipes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__title-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0 0.5rem 0;
+        font-family: shared.$primary-font-family;
+        color: shared.$primary-letter-color;
+    }
+}
+
+.recipes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}

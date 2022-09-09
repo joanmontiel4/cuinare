@@ -1,0 +1,36 @@
+export interface iRecipeForm {
+    id: string;
+    name: string;
+    drinkAlternate: string | null;
+    category: string;
+    area: string;
+    instructions: string;
+    image: string;
+    tags: Array<string> | null;
+    videoLink: string | null;
+    ingredient1: string | null;
+    ingredient2: string | null;
+    ingredient3: string | null;
+    ingredient4: string | null;
+    ingredient5: string | null;
+    ingredient6: string | null;
+    ingredient7: string | null;
+    ingredient8: string | null;
+    ingredient9: string | null;
+    ingredient10: string | null;
+    measure1: string | null;
+    measure2: string | null;
+    measure3: string | null;
+    measure4: string | null;
+    measure5: string | null;
+    measure6: string | null;
+    measure7: string | null;
+    measure8: string | null;
+    measure9: string | null;
+    measure10: string | null;
+    source: string | null;
+    imageSource: string | null;
+    creativeCommonsConfirmed: string | null;
+    dateModified: string | null;
+    isMyFavorite: boolean;
+}

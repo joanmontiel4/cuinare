@@ -1,0 +1,21 @@
+@use '../../styles/shared';
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: shared.$page-background-color;
+    border-bottom: 1px solid grey;
+}
+
+.header__title {
+    font-family: shared.$title-font-family;
+    font-size: 3.5rem;
+    margin: 0px 0rem;
+    color: shared.$primary-letter-color;
+}
+
+.login-container {
+    height: 100%;
+    margin: auto;
+}

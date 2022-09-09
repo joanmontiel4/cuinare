@@ -1,0 +1,175 @@
+@use '../../../infrastructure/styles/shared';
+
+.my-recipes {
+    background-color: shared.$page-background-color;
+    min-height: 100vh;
+
+    &__notlogin-text {
+        font-family: shared.$primary-font-family;
+        color: shared.$primary-letter-color;
+        margin: 2rem 0;
+        border: 1px solid grey;
+        padding: 1rem 4rem;
+    }
+
+    &__title-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0 0.5rem 0;
+        font-family: shared.$primary-font-family;
+        color: shared.$primary-letter-color;
+    }
+
+    &__btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+    }
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__input {
+        width: 30rem;
+        padding: 0.2rem;
+        border: none;
+        border-bottom: 1px solid shared.$primary-letter-color;
+        margin: 0.3rem;
+        background-color: shared.$page-background-color;
+        color: shared.$primary-letter-color;
+    }
+
+    &__select {
+        width: 30rem;
+        padding: 0.2rem;
+        border: none;
+        border-bottom: 1px solid shared.$primary-letter-color;
+        margin: 0.3rem;
+        background-color: shared.$page-background-color;
+        color: shared.$primary-letter-color;
+    }
+
+    &__label {
+        width: 100%;
+        margin: 1rem 0 0 0.5rem;
+        font-family: shared.$primary-font-family;
+        color: shared.$primary-letter-color;
+    }
+    &__text-area {
+        width: 30rem;
+        height: 5rem;
+        padding: 0.2rem;
+
+        font-family: shared.$primary-font-family;
+        color: shared.$primary-letter-color;
+        border: 1px solid shared.$primary-letter-color;
+        margin: 0.3rem;
+        background-color: shared.$page-background-color;
+    }
+
+    &__input-array {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__ingredients {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__measures {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input--shorter {
+        width: 12.5rem;
+    }
+
+    &__btn {
+        height: 2.2rem;
+        border-radius: 0.8rem;
+        padding: 0.5rem;
+        font-family: shared.$primary-font-family;
+        font-weight: 600;
+        color: white;
+        background-color: shared.$background-button-color;
+        border: 2.5px solid shared.$background-button-color;
+        cursor: pointer;
+    }
+
+    &__btn:hover {
+        color: shared.$background-button-color;
+        background-color: white;
+        border: 2.5px solid shared.$background-button-color;
+        font-weight: 600;
+    }
+
+    &__btn--submit {
+        width: 5rem;
+        margin-top: 1rem;
+    }
+
+    &__input-array {
+        max-width: 30rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__btn--add {
+        display: block;
+        width: 2.2rem;
+        margin: 0 0 0rem 1rem;
+    }
+
+    &__btn--close-form {
+        margin: 0 1rem;
+    }
+}
+
+.recipes-container {
+    min-width: 600px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recipes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__title-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0 0.5rem 0;
+        font-family: shared.$primary-font-family;
+        color: shared.$primary-letter-color;
+    }
+}

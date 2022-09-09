@@ -1,0 +1,50 @@
+@use '../../../infrastructure/styles/shared';
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.recipes-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: shared.$page-background-color;
+}
+
+.category-container {
+    min-width: 300px;
+    max-width: 1500px;
+}
+
+.category {
+    width: 100%;
+    margin: 1rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-spinner-container {
+    width: 100vh;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}

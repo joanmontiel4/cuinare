@@ -1,0 +1,48 @@
+@use '../../../infrastructure/styles/shared';
+
+.favorites {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: shared.$page-background-color;
+
+    &__notlogin-text {
+        font-family: shared.$primary-font-family;
+        color: shared.$primary-letter-color;
+        margin: 2rem 0;
+        border: 1px solid grey;
+        padding: 1rem 4rem;
+    }
+}
+
+.recipes-container {
+    min-width: 600px;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recipes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__title-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0 0.5rem 0;
+        font-family: shared.$primary-font-family;
+        color: shared.$primary-letter-color;
+    }
+}

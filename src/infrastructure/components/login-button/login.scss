@@ -1,0 +1,48 @@
+@use '../../styles/shared';
+
+.login {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 1.2rem;
+        border-radius: 0.8rem;
+        padding: 1.5px;
+        border: 2.5px solid shared.$background-button-color;
+    }
+
+    &__no-img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 1.2rem;
+        border-radius: 0.8rem;
+        padding: 1.5px;
+        border: 2.5px solid shared.$background-button-color;
+        visibility: hidden;
+    }
+
+    &__button {
+        width: 5rem;
+        height: 2.5rem;
+        border-radius: 0.8rem;
+        padding: 0.5rem;
+        font-family: shared.$primary-font-family;
+        font-weight: 600;
+        color: white;
+        background-color: shared.$background-button-color;
+        cursor: pointer;
+    }
+
+    &__button:hover {
+        color: shared.$background-button-color;
+        background-color: white;
+        border: 2.5px solid shared.$background-button-color;
+        font-weight: 600;
+    }
+}

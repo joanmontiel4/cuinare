@@ -1,0 +1,22 @@
+@use '../../styles/shared';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.tabs {
+    width: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1.8rem 0;
+
+    &__link {
+        text-decoration: none;
+        font-family: shared.$primary-font-family;
+        color: shared.$primary-letter-color;
+        font-weight: shared.$primary-font-weight;
+        padding: 0.2rem;
+    }
+
+    &__link:hover {
+        border-bottom: 1px solid shared.$primary-letter-color;
+    }
+}

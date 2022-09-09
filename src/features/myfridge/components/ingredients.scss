@@ -1,0 +1,40 @@
+$ingredients-box-height: 20vh;
+$ingredients-list-height: 17vh;
+
+.ingredients {
+    &__box {
+        border: solid 1px black;
+        border-radius: 0.8rem 0.8rem 0 0;
+        padding: 0.2rem;
+        width: 80vh;
+        height: $ingredients-box-height;
+        overflow: auto;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__subtitle {
+        margin: 0 0 0 1rem;
+    }
+
+    &__title {
+        margin: 0 0 0.5rem 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        height: $ingredients-list-height;
+    }
+
+    &__item {
+        width: 12rem;
+        text-align: center;
+        cursor: pointer;
+    }
+}
