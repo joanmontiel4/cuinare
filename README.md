@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# Cuinare
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+This project was created using [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template. Permanece of user information is achived using Real Time Database from Firebase, and session information is stored in Session Storage, avoiding loosing the information when refreshing the page.
 
-## Available Scripts
+## Context
 
-In the project directory, you can run:
+This project was created by me (Joan Montiel) as a part of my studies at ISDI Coders Frontend Dev bootcamp. The main purpose of this web application is to allow me to practice most of the content covered during the bootcamp. Although, this project is not conceived to result in a final product it is developed to include most of the necessary features to be a final product. The work is still in progress, and I plan to keep adding new features and improvements for as long as I can.
 
-### `npm start`
+The app uses the public API *https://www.themealdb.com/*. Some features such as the multiingredient filters require to become a Paypal supporter. But, many methods are included using the developer test key '1' as the API key.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## App description
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `name`
 
-### `npm test`
+The word **cuinare** is the result of combining two other words: 1) **cuina**, the catalan (valencian) word for kitchen and 2) **recipe**, including only its first two letters.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `features`
 
-### `npm run build`
+The web app currently includes five main features:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Home
+2. Recipes
+3. My Fridge
+4. My Recipes
+5. Favorites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Home
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The Home page welcomes you with a nice picture, an inspiring piece of text and a list of the last recipes added to the API used.
 
-### `npm run eject`
+#### Recipes
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The Recipes page gives access to all recipes provided by the API classified by **categories**. Recipes details are selected when clicking on the recipe name, category or origin.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### My Fridge
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+My Fridge allows to search recipes that contain a given list of ingredients. This feature includes the searching form, a text box containing the list of ingredients selected, the complete list of ingredients and the list of recipes. The user can search for the desired ingredient, while the list of ingredients only shows the ingredients which includes the characters written in the input. For adding ingredients to the list of selected ingredients the user can click on the ingredient or in the case that a single ingredient is left, can press the Enter button from the keyboard.
+Each element on the list of selected ingredients can be deleted from the list by clicking on the delete button. The list of recipes will show only the list of recipes with the selected ingredients.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### My Recipes
 
-## Learn More
+In this feature the user must login to be able to enter its own recipes. The recipes will be listed below. The user can select or not its recipes as a favorites.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Favorites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Shows the list of favorite recipes.
+
+#### Login
+
+Login authentication is provided by Firebase authentication tool.
